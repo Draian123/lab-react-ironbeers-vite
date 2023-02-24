@@ -15,8 +15,6 @@ export default function AllBeers() {
       axios.get(`https://ih-beers-api2.herokuapp.com/beers/search?q=${typedBeer}`)
         .then(response => {
           setBeers(response.data)
-          console.log(response.data)
-          // console(beers)
           setLoadingSearchedBeers(false)
         }
           )
